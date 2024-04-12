@@ -1,0 +1,38 @@
+{
+  "appointments": [
+    {
+      
+      "id": "1",
+      "name": "John Doe",
+      "phone": "1234567890",
+      "category": "Hair Cutting",
+      "date": "2024-04-12",
+      "message": "Need a haircut"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "phone": "0987654321",
+      "category": "Hair Washing",
+      "date": "2024-04-13",
+      "message": "Hair washing appointment"
+    },
+    {
+      "id": "3",
+      "name": "Alice Johnson",
+      "phone": "9876543210",
+      "category": "Hair Coloring",
+      "date": "2024-04-14",
+      "message": "Hair coloring appointment"
+    },
+    {
+      "id": "4",
+      "name": "shifu",
+      "phone": "0726597694",
+      "category": "D.JEMES",
+      "date": "2024-04-13",
+      "message": "hi"
+    }
+    
+  ]
+}

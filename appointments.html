@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointments</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: burlywood;
+      border: double 3px solid;
+    }
+    th, td {
+      border: 3px solid #07a0b4;
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #bb1010;
+    }
+  </style>
+</head>
+<body>
+  <h1>welcome home jeremiah </h1>
+  <table id="appointmentsTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Message</th>
+      </tr>
+    </thead>
+    <tbody id="appointmentsData">
+      <!-- Appointments data will be inserted here -->
+    </tbody>
+  </table>
+
+  <script>
+    // Fetch data from db.json and populate the table
+    fetch('db.json')
+      .then(response => response.json())
+      .then(data => {
+        const appointments = data.appointments;
+        const tableBody = document.getElementById('appointmentsData');
+        
+        appointments.forEach(appointment => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${appointment.name}</td>
+            <td>${appointment.phone}</td>
+            <td>${appointment.category}</td>
+            <td>${appointment.date}</td>
+            <td>${appointment.message}</td>
+          `;
+          tableBody.appendChild(row);
+        });
+      })
+      .catch(error => console.error('Error fetching appointments:', error));
+  </script>
+</body>
+</html>

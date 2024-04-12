@@ -11,9 +11,8 @@
   <link rel="stylesheet" href="./style/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="./img/">
-  <link href= "@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css')"" >
+  <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Crete+Round:ital@0;1&family=Madimi+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body id="top">
   <header class="header">
@@ -30,23 +29,6 @@
             <p class="item-title">Opening Hour :</p>
             <p class="item-text">Sunday - Friday, 08 am - 09 pm</p>
           </li>
-        <!-- <li class="header-top-item">
-            <ion-icon name="time-outline"></ion-icon>
-            <p class="item-title">emaile use</p>
-            <p class="item-text">jomojeremmy@gmaile.com</p>
-        </li>
-        --> 
-
-
-
-
-          <li>
-            <ul class="social-list">
-              <li><a class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-              <li><a class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
-              <li><a class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
-            </ul>
-          </li>
         </ul>
       </div>
     </div>
@@ -57,19 +39,13 @@
           <ul class="navbar-list">
             <li class="navbar-item"><a class="navbar-link">Home</a></li>
             <li class="navbar-item"><a class="navbar-link">Services</a></li>
-            <li class="navbar-item"><a class="navbar-link">Gallery</a></li
-            ><li class="navbar-item"><a class="navbar-link">Appointment</a></li>
           </ul>
         </nav>
         <a class="btn has-before"><span class="span">Appointment</span></a>
       </div>
     </div>
   </header>
-
-
-
-
-
+  
   <main>
     <section class="section hero has-before has-bg-image" id="home" aria-label="home" style="background-image: url('./img/58da9728-31d5-4b45-844e-ee567f406fcf.jpeg')">
       <div class="container">
@@ -114,15 +90,7 @@
         </ul>
       </div>
     </section>
-
-
-
-
-
-     <!-- 
-         GALLERY
-      -->
-
+        
       <section class="section gallery" id="gallery" aria-label="photo gallery">
         <div class="container">
 
@@ -137,10 +105,20 @@
             </div>
 
             <a  class="btn has-before">
-              <span class="span">Explore Gallery</span>
+              <button id="adminLoginBtn">Admin Login</button>
 
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
             </a>
+            <script>
+              document.getElementById("adminLoginBtn").addEventListener("click", function() {
+                const username = prompt("Enter your username:");
+                if (username && username.toLowerCase() === "jeremiah") {
+                  window.location.href = "appointments.html";
+                } else {
+                  alert("Only admin (Jeremiah) can access the appointments.");
+                }
+              });
+            </script>
 
           </div>
 
@@ -160,9 +138,10 @@
                   <h3 class="h3 card-title">D.JAMES</h3>
 
                   <p class="card-text">for men @100</p>
-                  <i class="fa-solid fa-heart"></i>
-                  <i class="fas fa-camera"></i>
 
+                    <i class="far fa-heart"></i>
+                    
+                  
 
 
                 </div>
@@ -187,7 +166,8 @@
                   <h3 class="h3 card-title">FADE</h3>
 
                   <p class="card-text">for men@200 </p>
-                  <i class="fas fa-camera"></i>
+                 
+                  <i class="far fa-heart"></i>
 
                 </div>
 
@@ -213,8 +193,8 @@
                   <h3 class="h3 card-title">AFRO</h3>
 
                   <p class="card-text">for men @ 100</p>
-                  <i class="fas fa-camera"></i>
-
+               
+                  <i class="far fa-heart"></i>
                 </div>
 
               </div>
@@ -237,7 +217,8 @@
                   <h3 class="h3 card-title">TAPER</h3>
 
                   <p class="card-text">for men @100</p>
-                  <i class="fas fa-camera"></i>
+                  
+                  <i class="far fa-heart"></i>
 
                 </div>
 
@@ -257,7 +238,8 @@
                   <h3 class="h3 card-title">WAVE</h3>
 
                   <p class="card-text">for men @200</p>
-                  <i class="fas fa-camera"></i>
+                  
+                  <i class="far fa-heart"></i>
 
 
                 </div>
@@ -278,7 +260,8 @@
                   <h3 class="h3 card-title">QUIFF</h3>
 
                   <p class="card-text">FOR MEN @ 200</p>
-                  <i class="fas fa-camera"></i>
+                 
+                  <i class="far fa-heart"></i>
 
                 </div>
 
@@ -299,7 +282,7 @@
                   <h3 class="h3 card-title">MOHAWK</h3>
 
                   <p class="card-text">for men @200</p>
-                  <i class="fas fa-camera"></i>
+                  <i class="far fa-heart"></i>
 
                 </div>
 
@@ -319,7 +302,7 @@
                   <h3 class="h3 card-title">CORNROW</h3>
 
                   <p class="card-text">for men @200</p>
-                  <i class="fas fa-camera"></i>
+                  <i class="far fa-heart"></i>
 
 
                 </div>
@@ -340,7 +323,7 @@
                   <h3 class="h3 card-title">LOWFADE</h3>
 
                   <p class="card-text">for men @200</p>
-                  <i class="fas fa-camera"></i>
+                  <i class="far fa-heart"></i>
 
 
                 </div>
@@ -360,7 +343,7 @@
                   <h3 class="h3 card-title">CROPTOP</h3>
 
                   <p class="card-text">for men @200</p>
-                  <i class="fas fa-camera"></i>
+                  <i class="far fa-heart"></i>
 
                 </div>
 
@@ -380,7 +363,7 @@
                   <h3 class="h3 card-title">Crew cut</h3>
 
                   <p class="card-text"> for men@100</p>
-                  <i class="fas fa-camera"></i>
+                  <i class="far fa-heart"></i>
 
                 </div>
 
@@ -399,7 +382,7 @@
                   <h3 class="h3 card-title">Undercut</h3>
 
                   <p class="card-text">for men @ 100</p>
-                  <i class="fas fa-camera"></i>
+                  <i class="far fa-heart"></i>
 
                 </div>
 
@@ -418,7 +401,7 @@
                   <h3 class="h3 card-title">category</h3>
 
                   <p class="card-text">for men @ 100 </p>
-
+                  <i class="far fa-heart"></i>
 
                 </div>
 
@@ -437,6 +420,7 @@
                   <h3 class="h3 card-title">Bangs</h3>
 
                   <p class="card-text">for men @100 </p>
+                  <i class="far fa-heart"></i>
 
                 </div>
 
@@ -449,7 +433,7 @@
       </section>
 
    
-         <!--APPOINTME-->
+         
 
 
       <section class="section appoin" id="appointment" aria-label="appointment">
@@ -471,12 +455,12 @@
                 suspendisse
               </p>
 
-              <form action="" class="appoin-form">
+              <form id="appointmentForm" action="/submitAppointment" method="POST">
 
                 <div class="input-wrapper">
                   <input type="text" name="name" placeholder="Your Full Name" required class="input-field">
 
-                  <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+                  
                 </div>
 
                 <div class="input-wrapper">
@@ -512,8 +496,32 @@
 
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </button>
-
-              </form>
+                
+              </form><nav>
+                <ul>
+                  <li><a href="index.html"></a></li>
+                  <li><a href="appointments.html"></a></li>
+                </ul>
+              </nav>
+              <script>
+                // Add event listener to the appointment form
+                document.addEventListener("DOMContentLoaded", function() {
+                  const appointmentForm = document.getElementById("appointmentForm");
+                  if (appointmentForm) {
+                    appointmentForm.addEventListener("submit", function(event) {
+                      // Prevent the default form submission behavior
+                      event.preventDefault();
+                      // thank you message
+                      showThankYouMessage();
+                    });
+                  }
+                });
+            
+                // Function to show thank you message
+                function showThankYouMessage() {
+                  alert("Thank you for visiting our barber and hair cutting!");
+                }
+              </script>
 
             </div>
 
@@ -525,11 +533,40 @@
           </div>
 
         </div>
-      </section>
 
-    </article>
-  </main>
-  <script src="index.js"></script>
-   
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const appointmentForm = document.getElementById("appointmentForm");
+            if (appointmentForm) {
+              appointmentForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+                showThankYouMessage();
+              });
+            }
+          });
+      
+          function showThankYouMessage() {
+            alert("Thank you for visiting our barber and hair cutting!");
+          }
+          function resetForm(form) {
+    form.reset();
+  }
+        </script>
+      
+        <script>
+          document.getElementById("adminLoginBtn").addEventListener("click", function() {
+            const username = prompt("Enter your username:");
+            if (username && username.toLowerCase() === "jeremiah") {
+              window.location.assign("appointments.html");
+            } else {
+              alert("Only admin (Jeremiah) can access the appointments.");
+            }
+          });
+        </script>
+</main>
+<script src="index.js"></script>
+
 </body>
-</html>
+</html>  
+
+
